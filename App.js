@@ -14,6 +14,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
+      <Text>Hermes: {JSON.stringify(global.HermesInternal?.getRuntimeProperties?.(), null, 2)}</Text>
       <Text onPress={hello}>One!</Text>
       <Text onPress={hello2}>Two!</Text>
       <StatusBar style="auto" />
